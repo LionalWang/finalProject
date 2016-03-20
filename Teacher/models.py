@@ -15,3 +15,10 @@ class Class(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class Question(models.Model):
+    name = models.CharField(u'Class Name', max_length=256)
+
+    def __unicode__(self):
+        return self.name
